@@ -7,6 +7,7 @@
     tools:context="com.pablo384.colorpictures.MainActivity">
 
     <ImageView
+        android:onClick="takePhoto"
         android:id="@+id/buttonCamera"
         android:layout_width="160dp"
         android:layout_height="160dp"
@@ -23,6 +24,7 @@
 
     <ImageView
         android:id="@+id/buttonVideoCamera"
+        android:onClick="takeVideo"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="32dp"
@@ -37,6 +39,7 @@
         android:layout_marginRight="8dp" />
 
     <ImageView
+        android:onClick="galleryPhotos"
         android:id="@+id/buttonGaleryPhotos"
         android:layout_width="160dp"
         android:layout_height="160dp"
@@ -52,6 +55,7 @@
         app:srcCompat="@drawable/ic_photo_library_black_48dp" />
 
     <ImageView
+        android:onClick="galleryVideos"
         android:id="@+id/buttonGaleryVideos"
         android:layout_width="160dp"
         android:layout_height="160dp"
