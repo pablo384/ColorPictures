@@ -1,5 +1,7 @@
 package com.pablo384.colorpictures;
 
+import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int MEDIA_FOTO = 5;
     public static final int MEDIA_VIDEO = 6;
 
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +27,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void takePhoto(View view) {
-        makeToast("Take Photo");
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+
     }
 
     public void takeVideo(View view) {
