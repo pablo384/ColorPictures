@@ -7,14 +7,14 @@
     tools:context="com.pablo384.colorpictures.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/buttonCamera"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="32dp"
         android:contentDescription="Camera Button"
         android:scaleType="fitCenter"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/imageView3"
+        app:layout_constraintRight_toLeftOf="@+id/buttonGaleryVideos"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_photo_camera_black_48dp"
         android:layout_marginLeft="8dp"
@@ -22,7 +22,7 @@
         android:layout_marginRight="8dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/buttonVideoCamera"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="32dp"
@@ -31,13 +31,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_videocam_black_48dp"
-        app:layout_constraintLeft_toRightOf="@+id/imageView2"
+        app:layout_constraintLeft_toRightOf="@+id/buttonGaleryPhotos"
         android:layout_marginLeft="8dp"
         app:layout_constraintHorizontal_bias="0.503"
         android:layout_marginRight="8dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/buttonGaleryPhotos"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginLeft="0dp"
@@ -46,13 +46,13 @@
         android:contentDescription="Galery Button"
         android:scaleType="fitCenter"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@+id/imageView"
-        app:layout_constraintRight_toRightOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonCamera"
+        app:layout_constraintRight_toRightOf="@+id/buttonCamera"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCamera"
         app:srcCompat="@drawable/ic_photo_library_black_48dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/buttonGaleryVideos"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginLeft="0dp"
@@ -60,9 +60,9 @@
         android:layout_marginTop="32dp"
         android:contentDescription="Galery Video Button"
         android:scaleType="fitCenter"
-        app:layout_constraintLeft_toLeftOf="@+id/imageView4"
-        app:layout_constraintRight_toRightOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonVideoCamera"
+        app:layout_constraintRight_toRightOf="@+id/buttonVideoCamera"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVideoCamera"
         app:srcCompat="@drawable/ic_video_library_black_48dp" />
 
 </android.support.constraint.ConstraintLayout>
